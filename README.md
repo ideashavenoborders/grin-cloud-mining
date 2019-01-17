@@ -1,9 +1,9 @@
 # Grin CPU Cloud Mining Guide - How to Mine GRIN in the Cloud
 
 ### 1. Create Server
-First, create a new Ubuntu instance at your favorite cloud hosting provider. We use [DigitalOcean](https://m.do.co/c/8949111a23b1). Choose your size. In this guide we are using a CPU Optimized instances with 4 CPUs that currently cost $0.119/hour = $2.856 per 24 hours of mining. 
+First, create a new Ubuntu instance at your favorite cloud hosting provider. We use [DigitalOcean](https://m.do.co/c/8949111a23b1). In this guide we are using a CPU optimized instance with 4 CPUs, which currently costs $0.119/hour = $2.856 per 24 hours of mining. 
 
-You can get about about 0.15-0.2 GPS per such instance.
+You can get about about **0.15-0.2 GPS** per such instance.
 
 In this guide, we will install both grin and grin-miner, configure grin-miner with your pool credentials, and start the mining process.
 
