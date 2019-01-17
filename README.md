@@ -88,11 +88,11 @@ Add the following line to the last line of your .profile file and save:
 
 ### 3.2 Add Pool Credentials
 
-Open grin-server.toml
+Open grin-miner.toml
 
 `cd grin-miner`
 
-`nano grin-server.toml`
+`nano grin-miner.toml`
 
 You can use **CTRL + V** to jump forth one page, and **CTRL + Y** to jump back one page.
 
@@ -142,9 +142,11 @@ Reconnect to your server via SSH.
 
 ### 4. Start Grin
 
-To start grin, simply change to its dir and start it. Let's start it with *screen*, so that it always keeps running in the background.
+Start the Grin client. Let's start it with *screen*, so that it always keeps running in the background.
 
 `cd`
+
+`cd grin`
 
 `screen -S grin`
 
