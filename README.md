@@ -10,19 +10,19 @@ In this guide, we will install both grin and grin-miner, configure grin-miner wi
 ### 2. Log In and Build Grin
 Connect to your server via SSH. 
 
-#### Update Server
+#### 2.1 Update Server
 
 `apt update`
 
-#### Install Dependencies
+#### 2.2 Install Dependencies
 
 `apt-get install build-essential cmake git libgit2-dev clang libncurses5-dev libncursesw5-dev zlib1g-dev pkg-config libssl-dev`
 
-#### Install Rust
+#### 2.3 Install Rust
 
 `curl https://sh.rustup.rs -sSf | sh; source $HOME/.cargo/env`
 
-#### Build Grin
+#### 2.4 Build Grin
 
 `git clone https://github.com/mimblewimble/grin.git`
 
@@ -42,7 +42,7 @@ To test, try to start it and have a look.
 
 What you see is the Grin TUI (Text-User-Interface). You can quit the TUI for now by pressing Q on your keyboard.
 
-#### Add Grin to Environment
+#### 2.5 Add Grin to Environment
 
 `cd`
 
@@ -52,7 +52,7 @@ add the following line to the last line of your .profile file and save with *CTR
 
 `export PATH="$HOME/grin/target/release:$PATH"`
 
-#### Prepare Configuration Files
+#### 2.6 Prepare Configuration Files
 
 `cd`
 
@@ -75,7 +75,7 @@ add the following line to the last line of your .profile file and save with *CTR
 
 `cargo build`
 
-#### Add grin-miner to Environment
+#### 3.1 Add grin-miner to Environment
 
 `cd`
 
@@ -86,7 +86,7 @@ Add the following line to the last line of your .profile file and save:
 `export PATH="$HOME/grin-miner/target/debug:$PATH"`
 
 
-### Add Pool Credentials
+### 3.2 Add Pool Credentials
 
 Open grin-server.toml
 
@@ -142,7 +142,8 @@ Reconnect to your server via SSH.
 
 ### 4. Start Grin
 
-To start grin, simply change to its dir and start it. Let's start it with screen, so that it keeps running.
+To start grin, simply change to its dir and start it. Let's start it with *screen*, so that it always keeps running in the background.
+
 `cd`
 
 `screen -S grin`
@@ -157,9 +158,9 @@ Press **CTRL+A+D** to detach from the screen view. If you want to reattach at an
 
 and again deatach using **CTRL+A+D**
 
-### 5. Start Grin-Miner
+### 5. Start Grin-Miner and Mine Grin
 
-Just like the grin client, let's start grin-miner in screen to keep it running.
+Just like the grin client, let's start grin-miner using *screen* to keep it running.
 
 `cd ~/grin-miner`
 
